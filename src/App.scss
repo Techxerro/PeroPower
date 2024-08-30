@@ -1,0 +1,64 @@
+html{
+  overflow-x:hidden ;
+}
+body{
+  font-family: "Source Sans 3", sans-serif!important;
+}
+
+a{
+  text-decoration: none!important;
+}
+
+.greentxt{
+  color:#006B4E!important;
+}
+
+
+@media (max-width:768px){
+  .container{
+    max-width:90%!important;
+  }
+}
+
+
+.btn-1{
+  background: #006B4E;
+  border-radius: 100px;
+  padding:10px 20px;
+  border:none;
+  position: relative;
+  overflow: hidden;
+  a{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap:10px;
+      color:#fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      height:100%;
+      width:100%;
+      svg{
+        position: relative;
+        right:0;
+        transition: 0.4s ease-in-out;
+      }
+      span{
+        position: relative;
+        right:0;
+        transition: 0.4s ease-in-out;
+      }
+  }
+  &:hover{
+    svg{
+      right:-45%;
+      transition: 0.5s ease-in-out;
+      transition-delay: 0.2s;
+    }
+    span{
+      right:-100%;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+

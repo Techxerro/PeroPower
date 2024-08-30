@@ -1,0 +1,101 @@
+.teamsection{
+    padding:80px 0;
+    .title{
+        padding-bottom: 15px;
+        .headingpointer{
+            position: relative;
+            width:60px;
+            margin-bottom:20px;
+            .line{
+                width:55px;
+                border:1px solid #006B4E;
+            }
+            .ellipse{
+                width:10px;
+                height:10px;
+                background: #006B4E;
+                border-radius: 100px;
+                position: absolute;
+                right:-5px; 
+                top:-4px;   
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 55px;
+            font-weight: bold;
+            color:#006B4E;
+        }
+        position: relative;
+        svg{
+            position: absolute;
+            left: 44%;
+            top: 9%;
+            scale: 0.65;
+        }
+    }
+    .myteamSwiper{
+        width:75%;
+        float: right;
+        .team-wrapper{
+            img{
+                width:100%;
+                margin:20px 0;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .nav{
+            position: relative;
+        }
+    }
+}
+
+@media (min-width:1025px) and (max-width:1260px) {
+    .teamsection .title h2{
+        font-size: 35px;
+    }
+    .teamsection .title svg {
+        position: absolute;
+        left: 5%!important;
+        top: 5%;
+        scale: 0.65;
+    }
+}
+
+
+@media (max-width:1024px){
+    .teamsection{
+        .container{
+            max-width: 90%!important;
+            .d-flex{
+                display: block!important;
+            }
+            .title{
+                padding-bottom: 0px;
+                svg{
+                    display: none;
+                }
+            }
+            .myteamSwiper{
+                width:100%;
+                .team-wrapper{
+                    padding:30px 0;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .teamsection{
+        .d-flex{
+            display: block!important;
+        }
+        .myteamSwiper{
+            width:100%;
+        }
+    }    
+}

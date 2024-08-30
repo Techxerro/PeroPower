@@ -1,0 +1,186 @@
+.hero{
+    width:100%;
+    height:800px;
+    position: relative;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position: absolute;
+        top:0;
+        z-index:1;
+    }
+    .content{
+        position: absolute;
+        top:50%;
+        left:5%;
+        z-index:2;
+        width:40dvw;
+        h2{
+            font-size: 60px;
+            font-weight: bold;
+            color:#fff;
+            span{
+                color:#F0E40B;
+            }
+        }
+        .btn{
+            background: #fff;
+            border-radius: 100px;
+            padding:10px 20px;
+            margin-top: 20px;
+            position: relative;
+            border:none;
+            a{
+                position: relative;
+                z-index: 1;
+                display: flex;
+                gap:20px;
+                align-items: center;
+                color:#000;
+                text-transform: uppercase;
+                height:100%;
+                width:100%;
+                svg{
+                    scale:0.8;
+                    position: relative;
+                    left:0;
+                    z-index: 1;
+                    transition: .9s ease-out;
+                }
+            }
+            
+            &:hover{
+                background-color: #006B4E;
+                a{
+                    color:#fff;
+                }
+                svg{
+                    left:10px;
+                    transition: 0.3s ease-out;
+                    circle{
+                        fill:#000;
+                    }
+                }
+            }
+        }
+    }  
+}
+.swiper{
+    position: relative;
+    .swiper-pagination{
+        width: 40px!important;
+        height: 100px!important;
+        right: 5%!important;
+        bottom: 35%!important;
+        left:unset!important;
+        display: grid !important;
+        gap: 0;
+        padding:0px;
+        .swiper-pagination-bullet{
+            background: transparent;
+            position: relative;
+            display: block;
+            color:#fff;
+            font-size: 24px;
+            font-family: 'Gt America bold';
+            font-weight: bold;
+            opacity: 1!important;
+            &::after{
+                content: '';
+                background: #fff;
+                width:10px;
+                height:10px;
+                border-radius: 100px;
+                position: absolute;
+                left: 25px;
+                top:13px;
+            }
+            &::before{                
+                content: '';
+                width:20px;
+                height:20px;
+                border:2px solid #F0E40B;
+                border-radius: 100px;
+                position: absolute;
+                left: 20px;
+                top:8px;
+                opacity: 0;
+            }
+        }
+        .swiper-pagination-bullet-active{
+            &::after{
+                background: #F0E40B;
+            }
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+    .socialicon{
+        justify-content: end;
+        position: absolute;
+        bottom:5%;
+        right:5%;
+        z-index:9;
+        gap:20px;
+        span{
+            background: transparent;
+            width:40px;
+            padding:5px 0;
+            text-align: center;
+            transform: skew(25deg);
+            border-radius: 2px;
+            svg{
+                transform: skew(-25deg);                    
+            }
+            &:hover{                
+                background: #FFE77B;
+                transition: 200ms ease-in-out;
+                svg{
+                    path{
+                        fill:#157438
+                    }
+                }
+            }
+        }        
+    }
+}
+ 
+
+@media (min-width:581px) and (max-width:1024px) {
+    .hero{
+        .content{
+            width:70dvw;
+            h2{
+                font-size: 45px;
+            }
+        } 
+    }
+}
+@media (max-width:580px) {
+    .hero{
+        height:600px;
+        .content{
+            top:55%;
+            left:10%;
+            width:70dvw;
+            h2{
+                font-size: 35px;
+            }
+            .btn{
+                padding:10px;
+                margin-top: 10px;
+                height:60px;
+                a{
+                    gap:5px;
+                    height:50%;
+                    svg{
+                        scale:0.5;
+                    }
+                }
+            }
+        }
+        
+    }
+}

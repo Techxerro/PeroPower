@@ -1,0 +1,31 @@
+.banner{
+    height:600px;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    .container,.row,.col-12{
+        height:100%;
+        h2{
+            padding-top: 10%;
+            font-size:70px;            
+            font-weight:700;
+            color:#fff;
+            span{
+                color:#F0E40B;
+            }
+            
+        }
+    }
+}
+
+@media (max-width:480px){
+    .banner{
+        height:450px;
+        .container{
+            max-width:90%!important;
+            h2{
+                font-size: 45px!important;
+            }
+        }
+    }
+}
